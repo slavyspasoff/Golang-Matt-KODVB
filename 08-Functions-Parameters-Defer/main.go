@@ -1,13 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"main/params"
+)
 
 func main() {
-	var f func(int, int) int
-
-	f = func(x, y int) int {
-		return x * y
-	}
-
-	fmt.Printf("%d\n", f(9, 3))
+	a := []int{1, 2, 3}
+	v := params.Do(a)
+	fmt.Printf("%+v\n%d\n", a, v)
 }
