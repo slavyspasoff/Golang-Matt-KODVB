@@ -1,6 +1,6 @@
 package params
 
-func Do(a []int) int {
-	a[0] = 0
-	return a[0]
+func Do(a *map[int]int) int {
+	(*a)[0] = 0
+	return (*a)[0]
 }
